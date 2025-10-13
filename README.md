@@ -10,21 +10,6 @@ MLA-SpyNet is a deep learning framework designed for video anomaly detection usi
 
 3. Evaluation Phase: Computes ROC curves and AUC values to assess anomaly detection performance quantitatively. Generates plots for visualization of the trade-off between true positive and false positive rates.
 
-
-# Repository Structure
-MLA-SpyNet/
-│
-├── train_mla_spynet.py        # Training script
-├── test_mla_spynet.py         # Testing script for anomaly detection
-├── evaluate_mla_spynet.py     # Evaluation script (ROC and AUC)
-├── models/                    # Folder for storing trained models and thresholds
-│   ├── mla_spynet_trained.h5
-│   └── bayesian_threshold.npy
-├── data/
-│   ├── Train_Data/            # Training sequences (organized in folders per sequence)
-│   └── Test_Data/             # Testing sequences (organized in folders per sequence)
-└── README.md                  # This file
-
 # Requirements
 Python 3.8+
 TensorFlow 2.x
@@ -61,20 +46,6 @@ python evaluate_mla_spynet.py
 Computes ROC curve and AUC using flow scores and ground-truth labels.
 
 *Outputs: Printed AUC value. ROC plot showing detection performance.
-
-# Data Format
-Each sequence folder should contain consecutive grayscale frames resized to 128x128.
-
-Folder structure example:
-Train_Data/
-├── sequence_01/
-│   ├── frame_0001.png
-│   ├── frame_0002.png
-│   └── ...
-├── sequence_02/
-│   └── ...
-
-The same structure applies to Test_Data/.
 
 # Notes
 Attention: CBAM (Channel + Spatial Attention) is applied after each convolutional layer in SpyNet for enhanced feature focus. Bayesian Thresholding: Automatically computes anomaly threshold using the distribution of EPE values from training sequences. Ground Truth: Consecutive frames are used as a reference to compute optical flow for EPE calculation. Ensure bayesian_threshold.npy is saved after training for use during testing.
