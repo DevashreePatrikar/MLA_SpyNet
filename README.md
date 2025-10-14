@@ -23,7 +23,9 @@ Matplotlib
 pip install tensorflow opencv-python numpy scikit-learn scipy matplotlib
 
 # Link for datasets: 
-UCSD Ped1 and Ped2: http://svcl.ucsd.edu/projects/anomaly/dataset.htm Avenue: http://www.cse.cuhk.edu.hk/leojia/projects/detectabnormal/dataset.html ShanghaiTech: https://svip-lab.github.io/dataset/campus_dataset.html
+UCSD Ped1 and Ped2: http://svcl.ucsd.edu/projects/anomaly/dataset.htm 
+Avenue: http://www.cse.cuhk.edu.hk/leojia/projects/detectabnormal/dataset.html 
+ShanghaiTech: https://svip-lab.github.io/dataset/campus_dataset.html
 
 # DSAPM Model
 The training script uses DSAPM as a pre-trained placeholder model for initial optical flow prediction. The DSAPM model can be downloaded from [https://github.com/DevashreePatrikar/DSAPM_RBFN_DAS.git] Place the downloaded model in the models/ folder as dsapm.h5.
