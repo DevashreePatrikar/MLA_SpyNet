@@ -59,5 +59,3 @@ Attention: CBAM (Channel + Spatial Attention) is applied after each convolutiona
 1. CBAM: Convolutional Block Attention Module – Woo et al., 2018
 2. SpyNet: Optical Flow Estimation – Ranjan & Black, 2017
 3. DSAPM pre-trained model [https://github.com/DevashreePatrikar/DSAPM_RBFN_DAS.git]
-
-This code is directly associated with the manuscript ‘[Multi-Level Attention Enhanced Spatial Pyramid Network for Precise Video Anomaly Localization]’ submitted to The Visual Computer. Please cite this manuscript if you use this code
